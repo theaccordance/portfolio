@@ -16,5 +16,10 @@
     "url": "https://github.com/theaccordance/mainwaring_dev/issues"
   },
   "homepage": "https://github.com/theaccordance/mainwaring_dev#readme",
-  "workspaces": ["packages/*"]
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "typescript": "^4.6.4"
+  }
 }
