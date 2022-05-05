@@ -1,0 +1,20 @@
+{
+  "name": "mainwaring.dev",
+  "version": "1.0.0",
+  "description": "Application stack driving mainwaring.dev",
+  "main": "package.json",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theaccordance/mainwaring_dev.git"
+  },
+  "author": "Joe Mainwaring <joseph.mainwaring@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/theaccordance/mainwaring_dev/issues"
+  },
+  "homepage": "https://github.com/theaccordance/mainwaring_dev#readme",
+  "workspaces": ["packages/*"]
+}
