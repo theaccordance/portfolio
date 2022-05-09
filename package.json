@@ -4,7 +4,8 @@
   "description": "Application stack driving mainwaring.dev",
   "main": "package.json",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx jest",
+    "test:coverage": "npx jest --coverage"
   },
   "repository": {
     "type": "git",
