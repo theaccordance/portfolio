@@ -1,5 +1,5 @@
 {
-  "name": "@mainwaring_dev/worker",
+  "name": "@mainwaring_dev/tasks",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
