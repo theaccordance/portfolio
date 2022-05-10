@@ -1,0 +1,31 @@
+{
+  "name": "mainwaring.dev",
+  "version": "1.0.0",
+  "description": "Application stack driving mainwaring.dev",
+  "main": "package.json",
+  "scripts": {
+    "test": "npx jest",
+    "test:coverage": "npx jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theaccordance/mainwaring_dev.git"
+  },
+  "author": "Joe Mainwaring <joseph.mainwaring@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/theaccordance/mainwaring_dev/issues"
+  },
+  "homepage": "https://github.com/theaccordance/mainwaring_dev#readme",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@babel/preset-env": "^7.17.10",
+    "@babel/preset-typescript": "^7.16.7",
+    "@types/jest": "^27.5.0",
+    "jest": "^28.1.0",
+    "ts-jest": "^28.0.2",
+    "typescript": "^4.6.4"
+  }
+}
