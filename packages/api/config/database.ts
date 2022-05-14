@@ -1,5 +1,3 @@
-import fs from "fs";
-
 export default ({ env }) => ({
   connection: {
     client: 'postgres',
@@ -10,7 +8,7 @@ export default ({ env }) => ({
       user: env('POSTGRES_USER', "strapi"),
       password: env('POSTGRES_PASSWORD', "strapi"),
       ssl: {
-        ca: fs.readFileSync(`../../temp/do-postgres.crt`).toString(),
+        ca: Buffer.from(env("POSTGRES_CERT"), "base64").toString("ascii"),
       },
     },
     debug: true,
