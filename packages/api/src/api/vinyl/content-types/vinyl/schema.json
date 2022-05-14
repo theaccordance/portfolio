@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vinyls",
+  "info": {
+    "singularName": "vinyl",
+    "pluralName": "vinyls",
+    "displayName": "Vinyl"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "release_id": {
+      "type": "uid",
+      "required": true
+    },
+    "cover_image_url": {
+      "type": "string"
+    },
+    "thumbnail_image_url": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "artist": {
+      "type": "string"
+    },
+    "year": {
+      "type": "integer"
+    },
+    "rating": {
+      "type": "integer"
+    }
+  }
+}
