@@ -11,6 +11,5 @@ export default ({ env }) => ({
         ca: Buffer.from(env("POSTGRES_CERT"), "base64").toString("ascii"),
       },
     },
-    debug: true,
   },
 });
