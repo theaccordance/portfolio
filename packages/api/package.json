@@ -1,5 +1,5 @@
 {
-  "name": "api",
+  "name": "@mainwaring_dev/api",
   "private": true,
   "version": "0.1.0",
   "description": "A Strapi application",
@@ -10,7 +10,6 @@
     "strapi": "strapi"
   },
   "dependencies": {
-    "@mainwaring_dev/config": "^1.0.0",
     "@strapi/plugin-i18n": "4.2.0-beta.2",
     "@strapi/plugin-users-permissions": "4.2.0-beta.2",
     "@strapi/provider-upload-cloudinary": "^4.1.11",
