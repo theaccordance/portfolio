@@ -4,6 +4,7 @@
   "description": "Application stack driving mainwaring.dev",
   "main": "package.json",
   "scripts": {
+    "deploy:api": "cd packages/api && npx strapi build && npx strapi start",
     "build:api": "cd packages/api && npx strapi build",
     "start:api": "cd packages/api && npx strapi start",
     "test": "npx jest",
