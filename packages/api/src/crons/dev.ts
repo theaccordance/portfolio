@@ -9,12 +9,8 @@ export default async function ({strapi}) {
   }, {});
 
   async function fetchDevArticles() {
-    const requestParams = {
-      method: 'GET',
-      url: `https://dev.to/api/articles?username=theaccordance&state=all`
-    };
 
-    await axios(requestParams).then((res) => {
+    await axios.get(`https://dev.to/api/articles?username=theaccordance&state=all`).then((res) => {
       const articles = res.data;
 
       for (const article of articles) {

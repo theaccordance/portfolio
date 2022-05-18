@@ -11,12 +11,8 @@ export default async function ({strapi}) {
 
 
   async function fetchDiscordsCollection() {
-    const requestParams = {
-      method: 'GET',
-      url: `https://api.discogs.com/users/theaccordance/collection/folders/4484615/releases?&page=1&per_page=100&token=${process.env.DISCOGS_PAT}`
-    };
 
-    await axios(requestParams).then((res) => {
+    await axios.get(`https://api.discogs.com/users/theaccordance/collection/folders/4484615/releases?&page=1&per_page=100&token=${process.env.DISCOGS_PAT}`).then((res) => {
       const {releases} = res.data;
 
       for (const release of releases) {
