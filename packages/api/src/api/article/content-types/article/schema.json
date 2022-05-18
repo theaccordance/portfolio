@@ -4,10 +4,11 @@
   "info": {
     "singularName": "article",
     "pluralName": "articles",
-    "displayName": "Article"
+    "displayName": "Article",
+    "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
@@ -15,10 +16,14 @@
       "type": "uid"
     },
     "url": {
-      "type": "string"
+      "type": "string",
+      "regex": "^(https?|chrome):\\/\\/[^\\s$.?#].[^\\s]*$",
+      "unique": true,
+      "required": true
     },
     "title": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "published": {
       "type": "date"

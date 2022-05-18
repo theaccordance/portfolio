@@ -13,13 +13,11 @@ export default async function ({strapi}) {
     await axios.get(`https://dev.to/api/articles?username=theaccordance&state=all`).then((res) => {
       const articles = res.data;
       for (const article of articles) {
-        const published = new Date(article.published_timestamp).toISOString().slice(0,10);
-        console.log(published);
         const articleItem = {
           article_id: article.id.toString(),
           title: article.title,
           url: article.url,
-          published
+          published: new Date(article.published_timestamp).toISOString().slice(0,10)
         };
 
         // if the item exists in the collection, update it
