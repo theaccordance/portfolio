@@ -4,18 +4,25 @@
   "info": {
     "singularName": "post",
     "pluralName": "posts",
-    "displayName": "Post"
+    "displayName": "Post",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
-    "post_title": {
+    "title": {
       "type": "string"
     },
-    "post_url": {
+    "url": {
       "type": "string"
+    },
+    "article_id": {
+      "type": "uid"
+    },
+    "published_date": {
+      "type": "date"
     }
   }
 }
