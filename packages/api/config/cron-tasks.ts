@@ -12,7 +12,7 @@ const cronMap = {
   dev: {
     task: dev,
     options: {
-      rule: SCHEDULE.EVERY_MINUTE
+      rule: SCHEDULE.DAILY_0200
     }
   },
   discogs: {
