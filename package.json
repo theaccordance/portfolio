@@ -1,28 +1,41 @@
 {
-  "name": "mainwaring.dev",
-  "version": "1.0.0",
-  "description": "Application stack driving mainwaring.dev",
-  "main": "package.json",
-  "scripts": {
-    "deploy:api": "cd packages/api && npx strapi build && npx strapi start",
-    "build:api": "cd packages/api && npx strapi build",
-    "start:api": "cd packages/api && npx strapi start",
-    "test": "npx jest",
-    "test:coverage": "npx jest --coverage"
+  "name": "@mainwaring_dev/api",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "author": {
+    "name": "Joe Mainwaring <joe@mainwaring.dev>"
   },
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/theaccordance/mainwaring_dev.git"
   },
-  "author": "Joe Mainwaring <joseph.mainwaring@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/theaccordance/mainwaring_dev/issues"
+  "engines": {
+    "node": ">=12.x.x <=16.x.x",
+    "npm": ">=6.0.0"
   },
-  "homepage": "https://github.com/theaccordance/mainwaring_dev#readme",
-  "workspaces": [
-    "packages/*"
-  ],
+  "strapi": {
+    "uuid": "2e778c71-e028-4724-be83-af4a4b2781c3"
+  },
+  "scripts": {
+    "build": "strapi build",
+    "deploy": "strapi build && strapi start",
+    "deploy:api": "strapi build && strapi start",
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "strapi": "strapi",
+    "test": "npx jest",
+    "test:coverage": "npx jest --coverage"
+  },
+  "dependencies": {
+    "@strapi/plugin-i18n": "4.2.0-beta.2",
+    "@strapi/plugin-users-permissions": "4.2.0-beta.2",
+    "@strapi/provider-upload-cloudinary": "^4.1.11",
+    "@strapi/strapi": "4.2.0-beta.2",
+    "axios": "^0.27.2",
+    "pg": "8.6.0"
+  },
   "devDependencies": {
     "@babel/preset-env": "^7.17.10",
     "@babel/preset-typescript": "^7.16.7",
