@@ -28,6 +28,12 @@
     },
     "story": {
       "type": "richtext"
+    },
+    "lat": {
+      "type": "float"
+    },
+    "lng": {
+      "type": "float"
     }
   }
 }
