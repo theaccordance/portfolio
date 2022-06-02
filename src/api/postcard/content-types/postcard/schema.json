@@ -8,11 +8,11 @@
     "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
-    "Destination": {
+    "destination": {
       "type": "string"
     },
     "date": {
@@ -35,7 +35,7 @@
     "lng": {
       "type": "float"
     },
-    "Location": {
+    "location": {
       "type": "string"
     }
   }
