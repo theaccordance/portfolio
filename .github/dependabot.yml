@@ -11,5 +11,7 @@ updates:
     ignore:
       - dependency-name: "passport"
     # Check the npm registry for updates every day (weekdays)
+    reviewers:
+      - "theaccordance"
     schedule:
       interval: "weekly"
