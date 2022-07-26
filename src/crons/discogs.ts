@@ -34,6 +34,8 @@ export default async function ({strapi}) {
           strapi.entityService.create(uid, {data: newItem});
         }
       }
+
+      return axios.get("https://betteruptime.com/api/v1/heartbeat/vBnVKGRkdfRLovxTSRu3aLoK");
     });
   }
 
