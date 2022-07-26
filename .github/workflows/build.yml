@@ -5,8 +5,26 @@ on:
 jobs:
   build:
     name: "Build Application"
-    environment: Production
     runs-on: ubuntu-latest
+    environment: Production
+    env:
+      POSTGRES_HOST: ${{ secrets.POSTGRES_HOST }}
+      POSTGRES_PORT: ${{ secrets.POSTGRES_PORT }}
+      POSTGRES_USER: ${{ secrets.POSTGRES_USER }}
+      POSTGRES_PASSWORD: ${{ secrets.POSTGRES_PASSWORD }}
+      POSTGRES_CERT: ${{ secrets.POSTGRES_CERT }}
+      CLOUDINARY_NAME: ${{ secrets.CLOUDINARY_NAME }}
+      CLOUDINARY_KEY: ${{ secrets.CLOUDINARY_KEY }}
+      CLOUDINARY_SECRET: ${{ secrets.CLOUDINARY_SECRET }}
+      HOST: ${{ secrets.HOST }}
+      PORT: ${{ secrets.PORT }}
+      APP_KEYS: ${{ secrets.APP_KEYS }}
+      API_TOKEN_SALT: ${{ secrets.API_TOKEN_SALT }}
+      ADMIN_JWT_SECRET: ${{ secrets.ADMIN_JWT_SECRET }}
+      JWT_SECRET: ${{ secrets.JWT_SECRET }}
+      NODE_ENV: ${{ secrets.NODE_ENV }}
+      PUBLIC_URL: ${{ secrets.PUBLIC_URL }}
+      DISCOGS_PAT: ${{ secrets.DISCOGS_PAT }}
     steps:
       - uses: actions/checkout@v1
       - uses: actions/setup-node@v3
@@ -14,5 +32,6 @@ jobs:
           node-version: 16
       - run: npm ci
       - run: npm run build
+
 
 
