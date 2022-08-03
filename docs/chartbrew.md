@@ -1,34 +1,19 @@
-<p align="center">
-  <a href="https://chartbrew.com">
-    <img src="https://docs.chartbrew.com/assets/logo_full_3.png" alt="ChartBrew logo" width="250"/>
-  </a>
-</a>
+# Chartbrew
 
-<p align="center">
-  <a href="https://circleci.com/gh/chartbrew/chartbrew" target="_blank"><img src="https://circleci.com/gh/chartbrew/chartbrew.svg?style=svg" alt="ChartBrew build" /></a>
-  <a href="https://app.codacy.com/gh/chartbrew/chartbrew" target="_blank"><img src="https://api.codacy.com/project/badge/Grade/b245aa07f69c4250a2de9d24efc659e6"></a>
-  <a href="https://discord.gg/KwGEbFk" target="_blank"><img src="https://img.shields.io/discord/656557151048957995?label=Discord" alt="" /></a>
-</p>
+[![ChartBrew logo](https://docs.chartbrew.com/assets/logo\_full\_3.png)](https://chartbrew.com)
 
-<p align="center">
-  <strong>
-    <a href="https://chartbrew.com">Chartbrew</a> is an open-source web application that can connect directly to databases and APIs and use the data to create beautiful charts. It features a chart builder, editable dashboards, embedable charts, query & requests editor, and team capabilities.
-  </strong>
-</p>
+[![ChartBrew build](https://circleci.com/gh/chartbrew/chartbrew.svg?style=svg)](https://circleci.com/gh/chartbrew/chartbrew) [![](https://api.codacy.com/project/badge/Grade/b245aa07f69c4250a2de9d24efc659e6)](https://app.codacy.com/gh/chartbrew/chartbrew) [![](https://img.shields.io/discord/656557151048957995?label=Discord)](https://discord.gg/KwGEbFk)
 
-<p align="center">
-  <strong><a href="https://chartbrew.com">Chartbrew as a service is available here</a></strong>
-</p>
+[**Chartbrew**](https://chartbrew.com) **is an open-source web application that can connect directly to databases and APIs and use the data to create beautiful charts. It features a chart builder, editable dashboards, embedable charts, query & requests editor, and team capabilities.**
 
-<br />
+[**Chartbrew as a service is available here**](https://chartbrew.com)
 
-<p align="center">
-  <a href="https://chartbrew.com">
-    <img src="https://cdn2.chartbrew.com/chartbrew-dashboard.jpg" alt="ChartBrew dashboard" width="600"/>
-  </a>
-</p>
+\
 
-<hr />
+
+[![ChartBrew dashboard](https://cdn2.chartbrew.com/chartbrew-dashboard.jpg)](https://chartbrew.com)
+
+***
 
 📚 [**Read the full docs here**](https://docs.chartbrew.com)
 
@@ -40,7 +25,7 @@
 
 💬 [**Join our Discord**](https://discord.gg/KwGEbFk)
 
-## Data sources
+### Data sources
 
 Currently, Chartbrew supports connections to these data sources.
 
@@ -62,36 +47,36 @@ Chartbrew also features dashboard templates with charts already prepared:
 
 ...or you can create your **custom templates** and replicate them across multiple dashboards.
 
-## Prerequisites
+### Prerequisites
 
 * NodeJS v12 (should also work with v10)
   * For M1 Macs you might need the latest v14 or v15
 * NPM
 * MySQL (5+) or PostgreSQL (12.5+)
 
-## Start
+### Start
 
 It is recommended you head over to the more detailed documentation to find out how to set up Chartbrew
 
 [📚 You can find it here](https://docs.chartbrew.com/#getting-started)
 
-## Quickstart
+### Quickstart
 
 If you already have a MySQL or PostgreSQL server running, create a database called `chartbrew` and follow the prompts of the `create-chartbrew-app` command below.
 
 **Important** Windows command line is not supported at the moment. Use something like [Cygwin](http://www.cygwin.com/) on Windows.
 
-```sh
+```
 npx create-chartbrew-app chartbrew
 ```
 
 The CLI tool creates a `chartbrew/.env` file which you can configure at any time if you want to change the database, API & client host, etc. The file contains comments explaining what each environmental variable is for. [Check out which need to be set here.](https://docs.chartbrew.com/#set-up-environmental-variables)
 
-### Run the project in Development
+#### Run the project in Development
 
 Open two terminals, one for front-end and the other for back-end.
 
-```sh
+```
 # frontend
 cd client/
 npm run start
@@ -101,11 +86,11 @@ cd server/
 npm run start-dev
 ```
 
-## Run with Docker
+### Run with Docker
 
 [Check the full guide in the docs.](https://docs.chartbrew.com/deployment/#run-the-application-with-docker)
 
-### Quickstart
+#### Quickstart
 
 A [Chartbrew docker image](https://hub.docker.com/r/razvanilin/chartbrew) is built whenever a new version is released.
 
@@ -113,7 +98,7 @@ Before running the commands below, make sure you have a MySQL server already run
 
 For `amd64` architecture:
 
-```sh
+```
 docker pull razvanilin/chartbrew
 
 docker run -p 4019:4019 -p 4018:4018 \
@@ -131,7 +116,7 @@ docker run -p 4019:4019 -p 4018:4018 \
 
 For `arm64` architecture:
 
-```sh
+```
 docker pull razvanilin/chartbrew:latest-arm64
 
 docker run -p 4019:4019 -p 4018:4018 \
@@ -147,11 +132,11 @@ docker run -p 4019:4019 -p 4018:4018 \
   razvanilin/chartbrew:latest-arm64
 ```
 
-## Deploy Chartbrew on Heroku and Vercel
+### Deploy Chartbrew on Heroku and Vercel
 
 [Read more on how to do this here](https://chartbrew.com/blog/how-to-deploy-chartbrew-on-heroku-and-vercel/)
 
-## Acknowledgements
+### Acknowledgements
 
 Many thanks to [everybody that contributed](https://github.com/chartbrew/chartbrew/graphs/contributors) to this open-source project 🙏
 
