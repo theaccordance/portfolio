@@ -3,6 +3,7 @@
 ## 🚀 Getting Started
 
 * [Introduction](README.md)
+* [Architecture](architecture.md)
 
 ## ⚙️ Tech Stack
 
