@@ -1,0 +1,4 @@
+# Documentation: https://docs.gitbook.com/integrations/git-sync/content-configuration
+root: ./docs/
+
+
