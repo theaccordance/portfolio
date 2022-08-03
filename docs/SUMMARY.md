@@ -7,6 +7,7 @@
 ## ⚙️ Tech Stack
 
 * [Airbyte](airbyte.md)
+* [Better Uptime](https://betterstack.com/docs)
 * [Carrd](https://carrd.co/docs)
 * [Chartbrew](chartbrew.md)
 * [Cloudflare](https://developers.cloudflare.com/)
