@@ -5,6 +5,9 @@
 * [Introduction](README.md)
 * [Architecture](architecture.md)
 
+## Open Source Projects
+* [Card Dealer](card-dealer.md)
+
 ## ⚙️ Tech Stack
 
 * [Airbyte](airbyte.md)
