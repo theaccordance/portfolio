@@ -1,0 +1,25 @@
+# Documentation: https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'config/**'
+      - 'src/**'
+      - 'package.json'
+  workflow_dispatch:
+jobs:
+  deploy:
+    name: "Deploy Strapi API to Digital Ocean"
+    runs-on: ubuntu-latest
+    environment: Production
+    steps:
+      - uses: actions/checkout@v3
+      - run: cat .do/api-mainwaring-dev.yaml
+      - uses: microsoft/variable-substitution@v1
+        with:
+          files: "./.do/api-mainwaring-dev.yaml"
+        env:
+          services.envs.0.value: ${{ secrets.POSTGRES_HOST }}
+      - run: cat .do/api-mainwaring-dev.yaml

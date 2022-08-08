@@ -1,0 +1,101 @@
+alerts:
+  - rule: DEPLOYMENT_FAILED
+  - rule: DEPLOYMENT_LIVE
+  - rule: DOMAIN_FAILED
+  - rule: DOMAIN_LIVE
+domains:
+  - domain: api.mainwaring.dev
+    type: PRIMARY
+name: api-mainwaring-dev
+region: nyc
+services:
+  - alerts:
+      - operator: GREATER_THAN
+        rule: CPU_UTILIZATION
+        value: 80
+        window: FIVE_MINUTES
+      - operator: GREATER_THAN
+        rule: MEM_UTILIZATION
+        value: 80
+        window: FIVE_MINUTES
+      - operator: GREATER_THAN
+        rule: RESTART_COUNT
+        value: 5
+        window: THIRTY_MINUTES
+    build_command: npm run build
+    environment_slug: node-js
+    envs:
+      - key: POSTGRES_HOST
+        scope: RUN_AND_BUILD_TIME
+        value: <<PLACEHOLDER>>
+      - key: POSTGRES_PORT
+        scope: RUN_AND_BUILD_TIME
+        value: <<PLACEHOLDER>>
+      - key: POSTGRES_USER
+        scope: RUN_AND_BUILD_TIME
+        value: <<PLACEHOLDER>>
+      - key: POSTGRES_PASSWORD
+        scope: RUN_AND_BUILD_TIME
+        value: <<PLACEHOLDER>>
+      - key: POSTGRES_CERT
+        scope: RUN_AND_BUILD_TIME
+        value: <<PLACEHOLDER>>
+      - key: CLOUDINARY_NAME
+        scope: RUN_AND_BUILD_TIME
+        value: <<PLACEHOLDER>>
+      - key: CLOUDINARY_KEY
+        scope: RUN_AND_BUILD_TIME
+        value: <<PLACEHOLDER>>
+      - key: CLOUDINARY_SECRET
+        scope: RUN_AND_BUILD_TIME
+        value: <<PLACEHOLDER>>
+      - key: HOST
+        scope: RUN_AND_BUILD_TIME
+        value: 0.0.0.0
+      - key: PORT
+        scope: RUN_AND_BUILD_TIME
+        value: "8080"
+      - key: APP_KEYS
+        scope: RUN_AND_BUILD_TIME
+        value: <<PLACEHOLDER>>
+      - key: API_TOKEN_SALT
+        scope: RUN_AND_BUILD_TIME
+        value: <<PLACEHOLDER>>
+      - key: ADMIN_JWT_SECRET
+        scope: RUN_AND_BUILD_TIME
+        value: <<PLACEHOLDER>>
+      - key: JWT_SECRET
+        scope: RUN_AND_BUILD_TIME
+        value: <<PLACEHOLDER>>
+      - key: NODE_ENV
+        scope: RUN_AND_BUILD_TIME
+        value: production
+      - key: PUBLIC_URL
+        scope: RUN_AND_BUILD_TIME
+        value: https://api.mainwaring.dev
+      - key: DISCOGS_PAT
+        scope: RUN_AND_BUILD_TIME
+        value: <<PLACEHOLDER>>
+    github:
+      branch: main
+      deploy_on_push: true
+      repo: theaccordance/mainwaring_dev
+    health_check:
+      failure_threshold: 5
+      http_path: /_health
+      initial_delay_seconds: 10
+      period_seconds: 30
+      success_threshold: 3
+      timeout_seconds: 5
+    http_port: 8080
+    instance_count: 1
+    instance_size_slug: basic-s
+    log_destinations:
+      - logtail:
+          token: <<PLACEHOLDER>>
+        name: Logtail
+    name: api
+    routes:
+      - path: /
+    run_command: npm run start
+    source_dir: /
