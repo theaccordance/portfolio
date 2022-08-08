@@ -11,15 +11,13 @@ on:
   workflow_dispatch:
 jobs:
   deploy:
-    name: "Deploy Strapi API to Digital Ocean"
+    name: "Deploy API Application to Digital Ocean"
     runs-on: ubuntu-latest
     environment: Production
     steps:
       - uses: actions/checkout@v3
-      - run: cat .do/api-mainwaring-dev.yaml
-      - uses: microsoft/variable-substitution@v1
+      - uses: digitalocean/action-doctl@v2
         with:
-          files: "./.do/api-mainwaring-dev.yaml"
-        env:
-          services.envs.0.value: ${{ secrets.POSTGRES_HOST }}
-      - run: cat .do/api-mainwaring-dev.yaml
+          token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
+      - run: doctl apps create-deployment ${{ secrets.DIGITALOCEAN_APP_ID }}
+
