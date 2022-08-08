@@ -1,6 +1,10 @@
 # Documentation: https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions
 on:
   push:
+    paths:
+      - 'config/**'
+      - 'src/**'
+      - 'package.json'
 jobs:
   build:
     name: "Build Application"
