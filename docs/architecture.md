@@ -1,9 +1,10 @@
 # Architecture
 
 - Tenants
-  - Low Code: The right tools reduce the amount of code you write, and less code = less maintenance. 
+  - Low Code:  Solutions that require the least amount of hand-written code
   - Continous: Automated workflows as code is pushed to Github
   - GTM:  The sandbox should strive to deliver a full set of features that would be expected for a go-to-market saas product
+  - Repeatable. The parts of the sandbox should be reusable in for-profit contexts as a quick option to solve problems.
 - Data
   - Personal Data
     - Pulled from other services (blog posts, vinyl records)
@@ -24,4 +25,4 @@
     - Managed Postgres DB
     - Basic App
   - Heroku for backend services that can operate at the free-tier 
-  - Vercel for front-end services that can operate at the free-tier 
+  - Vercel for front-end services that can operate at the free-tier

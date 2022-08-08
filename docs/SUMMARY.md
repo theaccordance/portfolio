@@ -5,7 +5,7 @@
 * [Introduction](README.md)
 * [Architecture](architecture.md)
 
-## Open Source Projects
+## 📂 Open Source Projects
 * [Card Dealer](card-dealer.md)
 
 ## ⚙️ Tech Stack
