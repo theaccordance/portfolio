@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "workouts",
+  "info": {
+    "singularName": "workout",
+    "pluralName": "workouts",
+    "displayName": "Workout"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "start": {
+      "type": "datetime",
+      "required": true
+    },
+    "finish": {
+      "type": "datetime",
+      "required": true
+    },
+    "type": {
+      "type": "string",
+      "required": true
+    },
+    "duration": {
+      "type": "integer",
+      "required": true
+    },
+    "calories": {
+      "type": "integer",
+      "required": true,
+      "default": 0
+    },
+    "distance": {
+      "type": "decimal"
+    },
+    "temperature": {
+      "type": "integer"
+    },
+    "time_zone": {
+      "type": "string"
+    }
+  }
+}
