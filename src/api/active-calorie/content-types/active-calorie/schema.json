@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "active_calories",
+  "info": {
+    "singularName": "active-calorie",
+    "pluralName": "active-calories",
+    "displayName": "Active Calorie Log"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "date": {
+      "type": "date",
+      "unique": true
+    },
+    "calories": {
+      "type": "decimal"
+    }
+  }
+}
