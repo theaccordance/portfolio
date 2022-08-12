@@ -26,6 +26,13 @@
     },
     "insurance": {
       "type": "string"
+    },
+    "plan_paid": {
+      "type": "decimal"
+    },
+    "my_responsibility": {
+      "type": "decimal",
+      "default": 0
     }
   }
 }
