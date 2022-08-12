@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "claims",
+  "info": {
+    "singularName": "claim",
+    "pluralName": "claims",
+    "displayName": "Insurance Claims"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "date": {
+      "type": "date"
+    },
+    "type": {
+      "type": "string"
+    },
+    "provider": {
+      "type": "string"
+    },
+    "billed": {
+      "type": "decimal"
+    }
+  }
+}
