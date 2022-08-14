@@ -8,6 +8,15 @@ provider "betteruptime" {
 }
 
 terraform {
+
+  cloud {
+    organization = "mainwaring"
+
+    workspaces {
+      name = "mainwaring-dev"
+    }
+  }
+
   required_version = "~> 1.0.3"
   required_providers {
     betteruptime = {
