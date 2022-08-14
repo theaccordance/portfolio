@@ -33,6 +33,10 @@
     "my_responsibility": {
       "type": "decimal",
       "default": 0
+    },
+    "claim_id": {
+      "type": "string",
+      "unique": true
     }
   }
 }
