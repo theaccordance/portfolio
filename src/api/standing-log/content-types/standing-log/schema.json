@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "standing_logs",
+  "info": {
+    "singularName": "standing-log",
+    "pluralName": "standing-logs",
+    "displayName": "Standing Log "
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "date": {
+      "type": "datetime",
+      "required": true,
+      "unique": true
+    },
+    "stood": {
+      "type": "boolean",
+      "required": true
+    }
+  }
+}
