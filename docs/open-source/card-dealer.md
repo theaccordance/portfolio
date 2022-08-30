@@ -1,9 +1,8 @@
 # Card Dealer
-
+![npm latest version](https://img.shields.io/npm/v/card-dealer/latest)
 ![Build](https://github.com/theaccordance/card-dealer/workflows/Build/badge.svg?branch=master)
 [![Coverage Status](https://coveralls.io/repos/github/theaccordance/card-dealer/badge.svg)](https://coveralls.io/github/theaccordance/card-dealer)
 [![CodeFactor](https://www.codefactor.io/repository/github/theaccordance/card-dealer/badge/master)](https://www.codefactor.io/repository/github/theaccordance/card-dealer/overview/master)
-![npm latest version](https://img.shields.io/npm/v/card-dealer/latest)
 [![Known Vulnerabilities](https://snyk.io/test/github/theaccordance/card-dealer/badge.svg?targetFile=package.json)](https://snyk.io/test/github/theaccordance/card-dealer?targetFile=package.json)
 ![Bundle Size](https://img.shields.io/bundlephobia/minzip/card-dealer)
 ![License](https://img.shields.io/npm/l/card-dealer)
