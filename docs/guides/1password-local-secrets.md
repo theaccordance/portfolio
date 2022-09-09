@@ -199,4 +199,3 @@ You'll notice in this example, my script is `eval $(op signin) && op inject -i .
 
 
 
-And that's it!  You now have a team using shared secrets managed through 1Password!  Share your experience with the tutorial below in the comments.  
