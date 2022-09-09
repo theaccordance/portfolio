@@ -45,6 +45,7 @@ Once you've authenticated, you'll want to first start by [listing your Vaults](h
 
 
 Now that we have our vault details, let's list the items of our _NewApp Non-Prod_ vault.  To list items in a vault, you'll execute the command `op item list --vault <vault name or guid>`:
+
 ![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/vyh6jju83ddn6z4xxtt4.png)
 
 Finally, we'll tell the CLI to fetch us the details of an item in JSON format, so we can copy the `reference` pointer to our template.  You can achieve this wit the command `op item get <item name or guid> --format json`
