@@ -1,7 +1,7 @@
 {
   "name": "@mainwaring_dev/api",
   "private": true,
-  "version": "0.1.0",
+  "version": "2022.3.0",
   "description": "A Strapi application",
   "author": {
     "name": "Joe Mainwaring <joe@mainwaring.dev>"
@@ -29,10 +29,10 @@
     "test:coverage": "npx jest --coverage"
   },
   "dependencies": {
-    "@strapi/plugin-i18n": "4.2.0-beta.2",
-    "@strapi/plugin-users-permissions": "4.2.0-beta.2",
-    "@strapi/provider-upload-cloudinary": "^4.1.11",
-    "@strapi/strapi": "4.2.0-beta.2",
+    "@strapi/plugin-i18n": "^4.3.8",
+    "@strapi/plugin-users-permissions": "^4.3.8",
+    "@strapi/provider-upload-cloudinary": "^4.3.8",
+    "@strapi/strapi": "^4.3.8",
     "axios": "^0.27.2",
     "pg": "8.8.0"
   },
