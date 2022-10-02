@@ -1,5 +1,7 @@
 # Architecture
 
+![Architecture Diagram](./images/architecture-diagram-apps.png)
+
 - Tenants
   - Low Code:  Solutions that require the least amount of hand-written code
   - Continous: Automated workflows as code is pushed to Github
