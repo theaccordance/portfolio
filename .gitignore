@@ -112,3 +112,5 @@ temp/
 .strapi-updater.json
 
 build/
+
+.DS_Store
