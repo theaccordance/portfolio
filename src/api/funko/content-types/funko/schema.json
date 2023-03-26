@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "funkos",
+  "info": {
+    "singularName": "funko",
+    "pluralName": "funkos",
+    "displayName": "Funko"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "upc": {
+      "type": "biginteger",
+      "unique": true
+    },
+    "product_title": {
+      "type": "string",
+      "required": true
+    },
+    "weight_lbs": {
+      "type": "decimal"
+    },
+    "quantity": {
+      "type": "integer",
+      "min": 0,
+      "required": true
+    },
+    "cost": {
+      "type": "decimal",
+      "min": 0
+    },
+    "notes": {
+      "type": "text"
+    }
+  }
+}
