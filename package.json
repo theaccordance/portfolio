@@ -31,7 +31,7 @@
   },
   "dependencies": {
     "@strapi/plugin-i18n": "^4.8.2",
-    "@strapi/plugin-users-permissions": "^4.8.2",
+    "@strapi/plugin-users-permissions": "^4.9.1",
     "@strapi/provider-upload-cloudinary": "^4.8.2",
     "@strapi/strapi": "^4.8.2",
     "axios": "^1.1.3",
