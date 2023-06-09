@@ -35,7 +35,7 @@
     "@strapi/provider-upload-cloudinary": "^4.10.2",
     "@strapi/strapi": "^4.10.1",
     "axios": "^1.4.0",
-    "pg": "8.10.0"
+    "pg": "8.11.0"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.21.5",
