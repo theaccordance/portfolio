@@ -110,6 +110,7 @@ node_modules/*
 temp/
 
 .strapi-updater.json
+.strapi/*
 
 build/
 
