@@ -30,7 +30,7 @@
     "test:coverage": "npx jest --coverage"
   },
   "dependencies": {
-    "@strapi/plugin-i18n": "^4.15.2",
+    "@strapi/plugin-i18n": "^4.15.4",
     "@strapi/plugin-users-permissions": "^4.13.1",
     "@strapi/provider-upload-cloudinary": "^4.15.2",
     "@strapi/strapi": "^4.13.1",
