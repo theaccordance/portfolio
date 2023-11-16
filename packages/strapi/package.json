@@ -28,8 +28,8 @@
     "nuke": "rm -rf node_modules/*",
     "start": "strapi start",
     "strapi": "strapi",
-    "test": "npx jest",
-    "test:coverage": "npx jest --coverage"
+    "test": "npx jest --passWithNoTests",
+    "test:coverage": "npx jest --coverage --passWithNoTests"
   },
   "dependencies": {
     "@strapi/plugin-i18n": "^4.15.4",
