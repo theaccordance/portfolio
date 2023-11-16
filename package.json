@@ -1,0 +1,10 @@
+{
+  "name": "@mainwaring_dev/root",
+  "version": "1.0.0",
+  "scripts": {
+    "nuke": "rm -rf node_modules/*"
+  },
+  "author": "Joe Mainwaring <joe@mainwaring.dev>",
+  "license": "MIT",
+  "workspaces": ["./packages/*"]
+}
