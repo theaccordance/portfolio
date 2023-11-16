@@ -1,5 +1,8 @@
 
 export default ({ env }) => ({
+  "request-id": {
+    enabled: true,
+  },
   upload: {
     config: {
       provider: 'cloudinary',
