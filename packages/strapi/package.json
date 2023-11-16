@@ -1,7 +1,7 @@
 {
   "name": "@mainwaring_dev/api",
   "private": true,
-  "version": "2023.1.0",
+  "version": "2023.2.0",
   "description": "A Strapi application",
   "author": {
     "name": "Joe Mainwaring <joe@mainwaring.dev>"
