@@ -30,7 +30,7 @@ export default async function ({strapi}) {
         }
       }
 
-      return axios.get("https://betteruptime.com/api/v1/heartbeat/Q1p2DZ6Hysc14D2nSQEawHNH");
+      return axios.get("https://uptime.betterstack.com/api/v1/heartbeat/ur9U1st7YiERgbbCtzrpQYMb");
     });
   }
 
