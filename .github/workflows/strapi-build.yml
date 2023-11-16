@@ -1,10 +1,11 @@
 # Documentation: https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions
+name: "Strapi: Build"
 on:
   push:
     paths:
-      - 'config/**'
-      - 'src/**'
-      - 'package.json'
+      - 'packages/strapi/config/**'
+      - 'packages/strapi/src/**'
+      - 'packages/strapi/package.json'
 jobs:
   build:
     name: "Build Application"
