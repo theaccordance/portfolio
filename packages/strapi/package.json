@@ -1,5 +1,5 @@
 {
-  "name": "@mainwaring_dev/api",
+  "name": "@mainwaring_dev/strapi",
   "private": true,
   "version": "2023.2.0",
   "description": "A Strapi application",
