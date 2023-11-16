@@ -3,7 +3,7 @@ name: "Strapi: Deploy API"
 on:
   push:
     branches:
-      - monorepo-strapi
+      - main
     paths:
       - 'packages/strapi/config/**'
       - 'packages/strapi/src/**'
