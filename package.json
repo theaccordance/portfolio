@@ -23,7 +23,8 @@
     "deploy": "strapi build && strapi start",
     "deploy:api": "strapi build && strapi start",
     "develop": "strapi develop",
-    "env:generate": "eval $(op signin) && op inject -i .env-template -o .env",
+    "generate:env": "eval $(op signin) && op inject -i .env-template -o .env",
+    "generate:types": "strapi ts:generate-types",
     "nuke": "rm -rf node_modules/*",
     "start": "strapi start",
     "strapi": "strapi",
@@ -43,6 +44,7 @@
     "@babel/preset-typescript": "^7.23.3",
     "@types/jest": "^28.1.6",
     "jest": "^28.1.3",
+    "@strapi/typings": "^4.13.3",
     "ts-jest": "^28.0.8",
     "typescript": "^5.1.6"
   }
