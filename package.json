@@ -6,5 +6,10 @@
   },
   "author": "Joe Mainwaring <joe@mainwaring.dev>",
   "license": "MIT",
-  "workspaces": ["./packages/*"]
+  "workspaces": [
+    "./packages/*"
+  ],
+  "devDependencies": {
+    "prettier": "3.1.0"
+  }
 }
