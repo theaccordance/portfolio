@@ -17,7 +17,7 @@ terraform {
     organization = "mainwaring"
 
     workspaces {
-      name = "mainwaring_dev"
+      name = "cloudflare"
     }
   }
 }
