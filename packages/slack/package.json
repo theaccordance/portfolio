@@ -1,0 +1,14 @@
+{
+  "name": "@mainwaring_dev/slack",
+  "version": "1.0.0",
+  "scripts": {
+    "nuke": "rm -rf node_modules/"
+  },
+  "private": true,
+  "dependencies": {
+    "@slack/bolt": "^3.15.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
+}
