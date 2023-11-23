@@ -1,5 +1,6 @@
 data "cloudflare_zone" "mainwaring-dev" {
-  account_id = "9fe22cdd8d5f79b964f6853b0623eb6b"
+  account_id = "59b7a4e3e14e05580982c8d9835bbdca"
+  zone_id = "9fe22cdd8d5f79b964f6853b0623eb6b"
 }
 
 resource "cloudflare_record" "carrd-primary" {
@@ -7,7 +8,7 @@ resource "cloudflare_record" "carrd-primary" {
   name    = "carrd"
   value   = "23.21.157.88"
   type    = "A"
-  ttl     = 3600
+  ttl     = 1
   proxied = true
 }
 
@@ -16,7 +17,7 @@ resource "cloudflare_record" "carrd-secondary" {
   name    = "carrd"
   value   = "23.21.234.173"
   type    = "A"
-  ttl     = 3600
+  ttl     = 1
   proxied = true
 }
 
@@ -25,7 +26,7 @@ resource "cloudflare_record" "api" {
   name    = "api"
   value   = "api-mainwaring-dev-vt4kr.ondigitalocean.app"
   type    = "CNAME"
-  ttl     = 3600
+  ttl     = 1
   proxied = true
 }
 
@@ -34,7 +35,7 @@ resource "cloudflare_record" "bruce" {
   name    = "bruce"
   value   = "carrd.mainwaring.dev"
   type    = "CNAME"
-  ttl     = 3600
+  ttl     = 1
   proxied = true
 }
 
@@ -52,7 +53,7 @@ resource "cloudflare_record" "contact" {
   name    = "contact"
   value   = "carrd.mainwaring.dev"
   type    = "CNAME"
-  ttl     = 3600
+  ttl     = 1
   proxied = true
 }
 
@@ -67,10 +68,10 @@ resource "cloudflare_record" "docs" {
 
 resource "cloudflare_record" "root" {
   zone_id = data.cloudflare_zone.mainwaring-dev.id
-  name    = "mainwaring.dev"
+  name    = "@"
   value   = "carrd.mainwaring.dev"
   type    = "CNAME"
-  ttl     = 3600
+  ttl     = 1
   proxied = true
 }
 
@@ -97,28 +98,28 @@ resource "cloudflare_record" "www" {
   name    = "www"
   value   = "mainwaring.dev"
   type    = "CNAME"
-  ttl     = 3600
+  ttl     = 1
   proxied = true
 }
 
 resource "cloudflare_record" "mx-primary" {
-  zone_id = data.cloudflare_zone.mainwaring-dev.id
-  name    = "mainwaring.dev"
-  value   = "mx01.mail.icloud.com"
-  type    = "MX"
-  ttl     = 3600
+  zone_id  = data.cloudflare_zone.mainwaring-dev.id
+  name     = "mainwaring.dev"
+  value    = "mx01.mail.icloud.com"
+  type     = "MX"
+  ttl      = 3600
   priority = 10
-  proxied = false
+  proxied  = false
 }
 
 resource "cloudflare_record" "mx-secondary" {
-  zone_id = data.cloudflare_zone.mainwaring-dev.id
-  name    = "mainwaring.dev"
-  value   = "mx02.mail.icloud.com"
-  type    = "MX"
-  ttl     = 3600
+  zone_id  = data.cloudflare_zone.mainwaring-dev.id
+  name     = "mainwaring.dev"
+  value    = "mx02.mail.icloud.com"
+  type     = "MX"
+  ttl      = 3600
   priority = 10
-  proxied = false
+  proxied  = false
 }
 
 resource "cloudflare_record" "txt" {
