@@ -1,4 +1,10 @@
 terraform {
+  required_providers {
+    gh-secrets = {
+      source = "Koroutine/gh-secrets"
+      version = "1.0.3"
+    }
+  }
   cloud {
     organization = "mainwaring"
 
