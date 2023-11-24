@@ -9,13 +9,20 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
-  # Enable version updates for npm
+
+  # Dependabot for root
   - package-ecosystem: "npm"
-    # Look for `package.json` and `lock` files in the `root` directory
     directory: "/"
+    reviewers:
+      - "theaccordance"
+    schedule:
+      interval: "weekly"
+
+  # Dependabot for strapi
+  - package-ecosystem: "npm"
+    directory: "/packages/strapi"
     ignore:
       - dependency-name: "passport"
-    # Check the npm registry for updates every day (weekdays)
     reviewers:
       - "theaccordance"
     schedule:
