@@ -35,7 +35,7 @@ jobs:
         with:
           node-version: 20.9.0
       - run: npm install
-      - run: npm run build
+      - run: npm run build -w @mainwaring_dev/strapi
 
 
 
