@@ -118,3 +118,4 @@ build/
 
 # Terraform
 terraform/*/.terraform/*
+terraform/*/terraform.tfvars
