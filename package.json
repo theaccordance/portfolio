@@ -2,7 +2,8 @@
   "name": "@mainwaring_dev/root",
   "version": "1.0.0",
   "scripts": {
-    "nuke": "rm -rf node_modules/*"
+    "nuke": "rm -rf node_modules/*",
+    "op:gh-secrets": "eval $(op signin) && op inject -i terraform/gh-secrets/template.tfvars -o terraform/gh-secrets/terraform.tfvars"
   },
   "author": "Joe Mainwaring <joe@mainwaring.dev>",
   "license": "MIT",
