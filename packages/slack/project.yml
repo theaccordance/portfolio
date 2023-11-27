@@ -1,6 +1,6 @@
 parameters: {}
 environment: {}
-actions:
+functions:
   - name: cerebro
     binary: false
     main: ""
