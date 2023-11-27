@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.main = void 0;
 function main(args) {
-    let name = args['name'] || 'stranger';
+    let name = args['name'] || 'muntant, welcome to krakoa';
     let greeting = 'Hello ' + name + '!';
     console.log(greeting);
     return { body: greeting };
