@@ -1,5 +1,5 @@
 {
-  "main": "lib/hello.js",
+  "main": "index.js",
   "devDependencies": {
     "typescript": "^4"
   },
