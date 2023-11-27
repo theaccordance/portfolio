@@ -42,7 +42,7 @@ resource "cloudflare_record" "bruce" {
 resource "cloudflare_record" "cerebro" {
   zone_id = data.cloudflare_zone.mainwaring-dev.id
   name    = "cerebro"
-  value   = "cerebro-i3mbp.ondigitalocean.app."
+  value   = "serverless-yt3e7.ondigitalocean.app"
   type    = "CNAME"
   ttl     = 1
   proxied = true
