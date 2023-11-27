@@ -1,7 +1,7 @@
 parameters: {}
 environment: {}
 packages:
-  - name: @mainwaring_dev/slack
+  - name: slack
     shared: false
     environment: { }
     parameters: { }
