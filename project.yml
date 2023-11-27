@@ -1,5 +1,0 @@
-packages:
-  - name: hello
-    actions:
-      - name: world
-        runtime: 'nodejs:18'

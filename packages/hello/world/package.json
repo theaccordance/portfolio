@@ -1,9 +1,0 @@
-{
-  "main": "index.js",
-  "devDependencies": {
-    "typescript": "^4"
-  },
-  "scripts": {
-    "build": "echo 'build script'"
-  }
-}
