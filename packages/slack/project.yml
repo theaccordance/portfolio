@@ -1,0 +1,13 @@
+parameters: {}
+environment: {}
+actions:
+  - name: cerebro
+    binary: false
+    main: ""
+    runtime: nodejs:default
+    web: true
+    parameters: { }
+    environment: { }
+    annotations: { }
+    limits: { }
+
