@@ -1,5 +1,5 @@
 packages:
-  - name: slack
+  - name: hello
     actions:
-      - name: slack
+      - name: world
         runtime: 'nodejs:default'
