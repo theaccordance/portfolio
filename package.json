@@ -8,6 +8,7 @@
   "author": "Joe Mainwaring <joe@mainwaring.dev>",
   "license": "MIT",
   "workspaces": [
+    "./apps/*",
     "./packages/*"
   ],
   "devDependencies": {

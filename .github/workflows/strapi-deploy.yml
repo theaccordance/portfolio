@@ -5,9 +5,9 @@ on:
     branches:
       - main
     paths:
-      - 'packages/strapi/config/**'
-      - 'packages/strapi/src/**'
-      - 'packages/strapi/package.json'
+      - 'apps/strapi/config/**'
+      - 'apps/strapi/src/**'
+      - 'apps/strapi/package.json'
   workflow_dispatch:
 jobs:
   deploy:

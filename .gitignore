@@ -69,7 +69,7 @@ typings/
 .yarn-integrity
 
 # dotenv environment variables file
-packages/strapi/.env
+.env
 .env.test
 
 # parcel-bundler cache (https://parceljs.org/)
@@ -109,8 +109,8 @@ node_modules/*
 
 temp/
 
-packages/strapi/.strapi-updater.json
-packages/strapi/.strapi/*
+apps/strapi/.strapi-updater.json
+apps/strapi/.strapi/*
 
 build/
 
