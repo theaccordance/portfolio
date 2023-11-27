@@ -2,4 +2,4 @@ packages:
   - name: hello
     actions:
       - name: world
-        runtime: 'nodejs:default'
+        runtime: 'nodejs:18'
