@@ -4,6 +4,6 @@
     "typescript": "^4"
   },
   "scripts": {
-    "build": "tsc -b"
+    "build": "echo 'build script'"
   }
 }
