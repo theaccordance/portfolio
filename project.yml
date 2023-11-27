@@ -1,5 +1,5 @@
 packages:
   - name: slack
     actions:
-      - name: index
+      - name: slack
         runtime: 'nodejs:default'
