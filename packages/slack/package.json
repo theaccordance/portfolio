@@ -1,8 +1,12 @@
 {
   "name": "@mainwaring_dev/slack",
+  "main": "dist/cerebro.js",
   "version": "1.0.0",
   "scripts": {
-    "nuke": "rm -rf node_modules/"
+    "build": "tsc",
+    "build:check": "tsc --noEmit",
+    "build:clear": "rm -rf dist/*",
+    "nuke": "rm -rf node_modules/ dist/*"
   },
   "private": true,
   "dependencies": {
