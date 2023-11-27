@@ -1,6 +1,6 @@
-export function main(args: {}): {} {
-    let name: string = args['name'] || 'muntant, welcome to Krakoa'
-    let greeting: string = 'Hello ' + name + '!'
-    console.log(greeting)
-    return { body: greeting }
+
+export function main(event: any, context: any) {
+  return {
+    body: {event, context}
+  }
 }
