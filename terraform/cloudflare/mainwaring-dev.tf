@@ -1,6 +1,6 @@
 data "cloudflare_zone" "mainwaring-dev" {
   account_id = "59b7a4e3e14e05580982c8d9835bbdca"
-  zone_id = "9fe22cdd8d5f79b964f6853b0623eb6b"
+  zone_id    = "9fe22cdd8d5f79b964f6853b0623eb6b"
 }
 
 resource "cloudflare_record" "carrd-primary" {
@@ -34,6 +34,15 @@ resource "cloudflare_record" "bruce" {
   zone_id = data.cloudflare_zone.mainwaring-dev.id
   name    = "bruce"
   value   = "carrd.mainwaring.dev"
+  type    = "CNAME"
+  ttl     = 1
+  proxied = true
+}
+
+resource "cloudflare_record" "cerebro" {
+  zone_id = data.cloudflare_zone.mainwaring-dev.id
+  name    = "cerebro"
+  value   = "cerebro-i3mbp.ondigitalocean.app."
   type    = "CNAME"
   ttl     = 1
   proxied = true
