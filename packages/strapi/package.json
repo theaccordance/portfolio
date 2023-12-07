@@ -41,7 +41,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.20.1",
-    "reselect": "^4.1.8",
+    "reselect": "^5.0.1",
     "strapi-plugin-request-id": "^1.2.0",
     "styled-components": "^6.1.1"
   },
