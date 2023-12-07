@@ -119,3 +119,17 @@ build/
 # Terraform
 terraform/*/.terraform/*
 terraform/*/terraform.tfvars
+
+# Ionic
+/.ionic
+/www
+/platforms
+/plugins
+/.angular
+/.angular/cache
+.sass-cache/
+/connect.lock
+/coverage
+/libpeerconnection.log
+testem.log
+/typings
