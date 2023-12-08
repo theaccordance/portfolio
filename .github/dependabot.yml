@@ -28,4 +28,12 @@ updates:
     schedule:
       interval: "weekly"
 
+  # Dependabot for Ionic
+  - package-ecosystem: "npm"
+    directory: "/packages/ionic"
+    reviewers:
+      - "theaccordance"
+    schedule:
+      interval: "weekly"
+
 
