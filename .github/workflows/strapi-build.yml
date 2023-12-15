@@ -3,9 +3,9 @@ name: "Strapi: Build"
 on:
   push:
     paths:
-      - 'packages/strapi/config/**'
-      - 'packages/strapi/src/**'
-      - 'packages/strapi/package.json'
+      - 'config/**'
+      - 'src/**'
+      - 'package.json'
 jobs:
   build:
     name: "Build Application"
