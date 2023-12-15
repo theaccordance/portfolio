@@ -20,6 +20,7 @@
   },
   "scripts": {
     "build": "strapi build",
+    "build:digitalocean": "npm install --production=false --legacy-peer-deps && npm run build",
     "deploy": "strapi build && strapi start",
     "deploy:api": "strapi build && strapi start",
     "develop": "strapi develop",
