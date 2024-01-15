@@ -36,7 +36,7 @@
   "dependencies": {
     "@strapi/plugin-i18n": "^4.15.5",
     "@strapi/plugin-users-permissions": "^4.15.5",
-    "@strapi/provider-upload-cloudinary": "^4.15.5",
+    "@strapi/provider-upload-cloudinary": "^4.17.0",
     "@strapi/strapi": "^4.15.5",
     "axios": "^1.6.2",
     "pg": "8.11.3",
