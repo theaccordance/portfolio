@@ -34,8 +34,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20.9.0
-      - run: npm install
-      - run: npm run build -w @mainwaring_dev/strapi
+      - run: npm ci
+      - run: npm run build
 
 
 
