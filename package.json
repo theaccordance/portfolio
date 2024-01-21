@@ -27,6 +27,7 @@
     "generate:env": "eval $(op signin) && op inject -i .env-template -o .env",
     "generate:types": "strapi ts:generate-types",
     "nuke": "rm -rf node_modules/*",
+    "op:betteruptime": "eval $(op signin) && op inject -i terraform/better-uptime/template.tfvars -o terraform/better-uptime/terraform.tfvars",
     "op:cloudflare": "eval $(op signin) && op inject -i terraform/cloudflare/template.tfvars -o terraform/cloudflare/terraform.tfvars",
     "op:gh-secrets": "eval $(op signin) && op inject -i terraform/gh-secrets/template.tfvars -o terraform/gh-secrets/terraform.tfvars",
     "start": "strapi start",
