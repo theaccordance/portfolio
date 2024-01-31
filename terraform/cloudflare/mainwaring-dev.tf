@@ -39,10 +39,10 @@ resource "cloudflare_record" "bruce" {
   proxied = true
 }
 
-resource "cloudflare_record" "cerebro" {
+resource "cloudflare_record" "cancer" {
   zone_id = data.cloudflare_zone.mainwaring-dev.id
-  name    = "cerebro"
-  value   = "serverless-yt3e7.ondigitalocean.app"
+  name    = "cancer"
+  value   = "carrd.mainwaring.dev"
   type    = "CNAME"
   ttl     = 1
   proxied = true
