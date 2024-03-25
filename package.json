@@ -48,7 +48,7 @@
     "strapi-plugin-request-id": "^1.2.0"
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.23.6",
+    "@babel/preset-env": "^7.24.3",
     "@babel/preset-typescript": "^7.23.3",
     "@strapi/typings": "^4.13.3",
     "@types/jest": "^29.5.11",
